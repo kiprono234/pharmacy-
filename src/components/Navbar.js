@@ -1,5 +1,6 @@
 
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/Navbar.scss";
 
 const categories = [
@@ -92,8 +93,8 @@ const Navbar = () => {
         <span />
       </button>
       <ul className={`navbar__links${menuOpen ? " open" : ""}`}>
-        <li><a href="/">Home</a></li>
-        <li><a href="#shop">Shop</a></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/shop">Shop</Link></li>
         <li className={`navbar__dropdown${dropdownOpen.category ? " open" : ""}`}>
           <button onClick={() => toggleDropdown("category")} aria-haspopup="true" aria-expanded={dropdownOpen.category}>
             Medicine Categories <span className="arrow">{dropdownOpen.category ? "▲" : "▼"}</span>
@@ -123,10 +124,10 @@ const Navbar = () => {
             ))}
           </ul>
         </li>
-        <li><a href="#health-info">Health Info</a></li>
-        <li><a href="#prescriptions">Prescriptions</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#login" className="navbar__login">Login/Register</a></li>
+        <li><Link to="/health-info">Health Info</Link></li>
+        <li><Link to="/prescriptions">Prescriptions</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+        <li><Link to="/login" className="navbar__login">Login/Register</Link></li>
         <li>
           <button className="navbar__cart-btn" aria-label="View cart">
             <span role="img" aria-label="cart" className="cart-emoji">🛒</span>

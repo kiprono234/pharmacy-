@@ -12,10 +12,14 @@ const promoImages = [
 
 const animatedWords = [
   "MEDICINE", 
-  "VITAMINS", 
+  "VITAMINS SUPPLEMENTS",
+  "WELLNESS PRODUCTS",
+  "BABY CARE", 
   "PERSONAL CONSULTATION", 
   "MEDICAL DEVICES"
 ];
+
+const marqueeWords = [...animatedWords, ...animatedWords]; // repeat for smooth marquee
 
 const HeaderPromo = () => (
   <div className="header-promo">
@@ -26,19 +30,22 @@ const HeaderPromo = () => (
         ))}
       </div>
     </div>
-    <div className="dealers-animated">
+    <div className="dealers-animated show-all">
       <span className="dealers-label">DEALERS IN&nbsp;</span>
-      <span className="animated-words">
-        {animatedWords.map((word, idx) => (
-          <span
-            className="animated-word"
-            style={{ animationDelay: `${idx * 2.2}s` }}
-            key={word}
-          >
-            {word}
-          </span>
-        ))}
-      </span>
+      <div className="words-marquee-outer">
+        <div className="words-marquee-track">
+          {marqueeWords.map((word, idx) => (
+            <span
+              className="animated-word-show blinking-word"
+              key={word + idx}
+              style={{ animationDelay: `${(idx % animatedWords.length) * 0.35}s` }}
+            >
+              {word}
+              <span className="word-separator"> &bull; </span>
+            </span>
+          ))}
+        </div>
+      </div>
     </div>
     <div className="promo-banner">
       <h2>Get 20% Off Your First Order!</h2>
