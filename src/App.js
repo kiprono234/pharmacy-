@@ -1,23 +1,10 @@
-// import React from "react";
-// import Navbar from "./components/Navbar";
-// import HeaderPromo from "./components/HeaderPromo";
 
-// function App() {
-//   return (
-//     <div className="app">
-//       <Navbar />
-//       <HeaderPromo />
-      
-//     </div>
-//   );
-// }
-
-// export default App;
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HeaderPromo from "./components/HeaderPromo";
-import Home from "./Pages/Home";; // Make sure you have this file
+import Home from "./Pages/Home";
+import PharmacyProducts from "./components/PharmacyProducts";
 
 function App() {
   return (
@@ -30,6 +17,7 @@ function App() {
             element={
               <>
                 <HeaderPromo />
+                <PharmacyProducts />
                 <Home />
               </>
             }

@@ -1,220 +1,252 @@
 
 .navbar {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 0 24px;
-    height: 60px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 0 24px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 2px 24px rgba(44, 62, 80, 0.07);
+  justify-content: space-between;
+  position: relative;
+
+  &__logo {
+    font-size: 1.35rem;
+    font-weight: bold;
+    color: #52a6f8;
+    letter-spacing: 1px;
+  }
+
+  &__brand {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #222;
+  }
+
+  &__hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 50;
+    span {
+      display: block;
+      width: 100%;
+      height: 4px;
+      background: #52a6f8;
+      margin: 4px 0;
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+    &.active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    &.active span:nth-child(2) {
+      opacity: 0;
+    }
+    &.active span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+
+  &__links {
     display: flex;
     align-items: center;
-    border-radius: 0 0 12px 12px;
-    box-shadow: 0 2px 24px rgba(44, 62, 80, 0.07);
-    justify-content: space-between;
-    position: relative;
-  
-    &__logo {
-      font-size: 1.35rem;
-      font-weight: bold;
-      color: #52a6f8;
-      letter-spacing: 1px;
-    }
-  
-    &__brand {
-      font-weight: bold;
-      font-size: 1.3rem;
-      color: #222;
-    }
-  
-    &__hamburger {
-      display: none;
-      flex-direction: column;
-      justify-content: center;
-      width: 34px;
-      height: 34px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      z-index: 50;
-      span {
-        display: block;
-        width: 100%;
-        height: 4px;
-        background: #52a6f8;
-        margin: 4px 0;
-        border-radius: 2px;
-        transition: all 0.3s;
-      }
-      &.active span:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-      }
-      &.active span:nth-child(2) {
-        opacity: 0;
-      }
-      &.active span:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-      }
-    }
-  
-    &__links {
-      display: flex;
-      align-items: center;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-  
-      li {
-        margin-left: 18px;
-        position: relative;
-  
-        a, button {
-          text-decoration: none;
-          color: #222;
-          font-weight: 500;
-          font-size: 1rem;
-          background: none;
-          border: none;
-          cursor: pointer;
-          transition: color 0.15s;
-          padding: 8px 4px;
-          &:hover,
-          &.navbar__login {
-            color: #52a6f8;
-          }
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-left: 18px;
+      position: relative;
+
+      a, button {
+        text-decoration: none;
+        color: #222;
+        font-weight: 500;
+        font-size: 1rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: color 0.15s;
+        padding: 8px 4px;
+        &:hover,
+        &.navbar__login {
+          color: #52a6f8;
         }
       }
     }
-  
-    &__dropdown {
-      position: relative;
-  
-      > button {
-        display: flex;
-        align-items: center;
-        gap: 4px;
+  }
+
+  &__dropdown {
+    position: relative;
+
+    > button {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      background: none;
+      border: none;
+      color: #222;
+      font-weight: 500;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: color 0.15s, background 0.15s;
+      border-radius: 6px;
+      padding: 8px 4px;
+
+      &:hover,
+      &:focus {
+        color: #52a6f8;
+        background: #f2f7fd;
       }
-  
-      .arrow {
-        font-size: 0.85em;
-        margin-left: 2px;
-      }
-  
-      .navbar__submenu {
-        display: none;
-        position: absolute;
-        top: 130%;
-        left: 0;
-        min-width: 230px;
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 4px 24px rgba(44, 62, 80, 0.07);
-        padding: 12px 0;
-        z-index: 10;
-  
-        li {
-          margin: 0;
-          padding: 0 18px;
-          span {
-            display: block;
-            padding: 8px 0;
-            font-size: 0.98rem;
-            color: #444;
-            font-weight: 500;
-          }
-          ul {
-            padding-left: 16px;
-            li span {
-              font-weight: 400;
-              color: #555;
-              font-size: 0.97rem;
+    }
+
+    .arrow {
+      font-size: 0.85em;
+      margin-left: 2px;
+    }
+
+    .navbar__submenu {
+      display: none;
+      position: absolute;
+      top: 130%;
+      left: 0;
+      min-width: 230px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 24px rgba(44, 62, 80, 0.07);
+      padding: 12px 0;
+      z-index: 10;
+
+      li {
+        margin: 0;
+        padding: 0 18px;
+        span {
+          display: block;
+          padding: 8px 0;
+          font-size: 0.98rem;
+          color: #444;
+          font-weight: 500;
+          transition: color 0.15s, background 0.15s;
+        }
+        ul {
+          padding-left: 16px;
+          li span {
+            font-weight: 400;
+            color: #555;
+            font-size: 0.97rem;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background 0.16s, color 0.16s;
+            &:hover,
+            &:focus {
+              background: #f4f7fa;
+              color: #52a6f8;
             }
           }
         }
       }
-  
-      &.open .navbar__submenu {
-        display: block;
-      }
     }
-  
-    &__cart-btn {
-      background: transparent;
-      border: none;
-      cursor: pointer;
-      padding: 4px 0 0 0;
+
+    // Show submenu on hover for desktop, and also for .open state (click)
+    &:hover > .navbar__submenu,
+    &.open .navbar__submenu {
+      display: block;
+    }
+  }
+
+  &__cart-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px 0 0 0;
+    display: flex;
+    align-items: center;
+    transition: background 0.15s;
+
+    .cart-emoji {
+      font-size: 1.6rem;
+      line-height: 1;
+    }
+
+    &:hover,
+    &:focus {
+      background: #f0f8ff;
+      border-radius: 4px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 8px;
+
+    &__hamburger {
       display: flex;
-      align-items: center;
-      transition: background 0.15s;
-  
-      .cart-emoji {
-        font-size: 1.6rem;
-        line-height: 1;
-      }
-  
-      &:hover,
-      &:focus {
-        background: #f0f8ff;
-        border-radius: 4px;
-      }
+      position: absolute;
+      right: 24px;
+      top: 13px;
     }
-  }
-  
-  @media (max-width: 900px) {
-    .navbar {
-      height: auto;
+
+    &__links {
       flex-direction: column;
-      align-items: flex-start;
-      padding: 10px 8px;
-  
-      &__hamburger {
-        display: flex;
-        position: absolute;
-        right: 24px;
-        top: 13px;
-      }
-  
-      &__links {
-        flex-direction: column;
+      width: 100%;
+      background: #fff;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      box-shadow: 0 6px 24px rgba(44, 62, 80, 0.08);
+      border-radius: 0 0 12px 12px;
+      z-index: 20;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.32s cubic-bezier(0.4,0,0.2,1);
+
+      li {
+        margin: 0;
         width: 100%;
-        background: #fff;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        right: 0;
-        box-shadow: 0 6px 24px rgba(44, 62, 80, 0.08);
-        border-radius: 0 0 12px 12px;
-        z-index: 20;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.32s cubic-bezier(0.4,0,0.2,1);
-  
-        li {
-          margin: 0;
+        border-bottom: 1px solid #f1f3f6;
+
+        a, button {
           width: 100%;
-          border-bottom: 1px solid #f1f3f6;
-  
-          a, button {
-            width: 100%;
-            text-align: left;
-            padding: 12px 24px;
-          }
-        }
-  
-        .navbar__dropdown .navbar__submenu {
-          position: static;
-          background: #f6faff;
-          box-shadow: none;
-          padding: 0;
-          border-radius: 0;
-          ul {
-            padding-left: 24px;
-          }
+          text-align: left;
+          padding: 12px 24px;
         }
       }
-  
-      &__links.open {
-        max-height: 1200px;
-        transition: max-height 0.45s cubic-bezier(0.4,0,0.2,1);
+
+      .navbar__dropdown .navbar__submenu {
+        position: static;
+        background: #f6faff;
+        box-shadow: none;
+        padding: 0;
+        border-radius: 0;
+        ul {
+          padding-left: 24px;
+        }
       }
     }
+
+    &__links.open {
+      max-height: 1200px;
+      transition: max-height 0.45s cubic-bezier(0.4,0,0.2,1);
+    }
   }
+}
+
+// Dropdown animation (optional, add if you want fade-in effect)
+// @keyframes dropdown-fadein {
+//   from { opacity: 0; transform: translateY(8px);}
+//   to   { opacity: 1; transform: translateY(0);}
+// }------------------------------

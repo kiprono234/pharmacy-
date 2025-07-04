@@ -62,9 +62,14 @@ const services = [
   "Telepharmacy Chat Support"
 ];
 
+const prescriptionsDropdownOptions = [
+  { label: "Filling In Your Prescriptions", link: "/fill-prescription" },
+  // You can add more options here if needed
+];
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState({ category: false, services: false });
+  const [dropdownOpen, setDropdownOpen] = useState({ category: false, services: false, prescriptions: false });
 
   const toggleDropdown = (name) => {
     setDropdownOpen((prev) => ({
@@ -73,7 +78,7 @@ const Navbar = () => {
     }));
   };
 
-  const closeAllDropdowns = () => setDropdownOpen({ category: false, services: false });
+  const closeAllDropdowns = () => setDropdownOpen({ category: false, services: false, prescriptions: false });
 
   return (
     <nav className="navbar">
@@ -124,10 +129,22 @@ const Navbar = () => {
             ))}
           </ul>
         </li>
+        {/* Prescriptions Dropdown */}
+        <li className={`navbar__dropdown${dropdownOpen.prescriptions ? " open" : ""}`}>
+          <button onClick={() => toggleDropdown("prescriptions")} aria-haspopup="true" aria-expanded={dropdownOpen.prescriptions}>
+            Prescriptions <span className="arrow">{dropdownOpen.prescriptions ? "▲" : "▼"}</span>
+          </button>
+          <ul className="navbar__submenu">
+            {prescriptionsDropdownOptions.map(option => (
+              <li key={option.label}>
+                <Link to={option.link}>{option.label}</Link>
+              </li>
+            ))}
+          </ul>
+        </li>
         <li><Link to="/health-info">Health Info</Link></li>
-        <li><Link to="/prescriptions">Prescriptions</Link></li>
         <li><Link to="/contact">Contact</Link></li>
-        <li><Link to="/login" className="navbar__login">Login/Register</Link></li>
+        {/* <li><Link to="/login" className="navbar__login">Login/Register</Link></li> */}
         <li>
           <button className="navbar__cart-btn" aria-label="View cart">
             <span role="img" aria-label="cart" className="cart-emoji">🛒</span>
