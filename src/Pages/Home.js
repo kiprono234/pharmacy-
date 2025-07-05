@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./Home.scss";
 import { useNavigate } from "react-router-dom";
@@ -47,7 +48,19 @@ const blogPreviews = [
 export default function Home() {
   const navigate = useNavigate();
 
-  // Function to handle health service clicks
+  const handleShopNow = () => {
+    navigate("/products");
+  };
+
+  const handleConsultDoctor = () => {
+    navigate("/consultation");
+  };
+
+  const handleUploadPrescription = () => {
+    navigate("/upload-prescription");
+  };
+
+  // Function to handle other health service clicks
   const handleServiceClick = (route) => {
     navigate(route);
   };
@@ -66,9 +79,9 @@ export default function Home() {
           <h1>Your Health, Our Priority</h1>
           <p>Get medicines, wellness products, and healthcare services at your fingertips.</p>
           <div className="cta-buttons">
-            <button className="cta shop-now">Shop Now</button>
-            <button className="cta consult">Consult a Doctor</button>
-            <button className="cta upload">Upload Prescription</button>
+            <button className="cta shop-now" onClick={handleShopNow}>Shop Now</button>
+            <button className="cta consult" onClick={handleConsultDoctor}>Consult a Doctor</button>
+            <button className="cta upload" onClick={handleUploadPrescription}>Upload Prescription</button>
           </div>
         </div>
       </section>
