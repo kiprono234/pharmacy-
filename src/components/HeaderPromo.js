@@ -62,7 +62,7 @@ const HeaderPromo = () => (
         <p>
           Use code <span className="promo-code">WELCOME20</span> at checkout
         </p>
-        <button className="promo-btn">SHOP NOW</button>
+        {/* <button className="promo-btn">SHOP NOW</button> */}
       </div>
     </div>
     <img

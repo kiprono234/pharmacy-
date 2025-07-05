@@ -4,7 +4,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import "../styles/PharmacyProducts.scss";
 
 const products = [
-  // Main demo products
+  // Main demo products (no category, will appear under "General")
   {
     name: "Paracetamol 500mg",
     image: "https://images.unsplash.com/photo-1588718889344-f7bd7a565d20?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFyYWNldGFtb2x8ZW58MHx8MHx8fDA%3D",
@@ -125,6 +125,63 @@ const products = [
     price: "Ksh 90",
     desc: "For strain or sprain support.",
     category: "First Aid / Misc"
+  },
+  // Dental Care Products
+  {
+    name: "Fluoride Toothpaste",
+    image: "https://images.unsplash.com/photo-1706520636717-5820f9b9d03e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGZsb3VyaWRlJTIwdG9vdGhwYXN0ZXxlbnwwfHwwfHx8MA%3D%3D",
+    price: "Ksh 150",
+    desc: "Strengthens enamel and prevents cavities.",
+    category: "Dental Care"
+  },
+  {
+    name: "Soft Bristle Toothbrush",
+    image: "https://media.istockphoto.com/id/2208051386/photo/pink-electric-toothbrush-close-up-soft-bristles-minimalist-design-on-a-white-background.jpg?s=612x612&w=0&k=20&c=vYyyYrmDpf9vQDmt5YzgqgGAI8KQGoIInzFjXUy6fzM=",
+    price: "Ksh 100",
+    desc: "Gentle on gums and effective in cleaning.",
+    category: "Dental Care"
+  },
+  {
+    name: "Dental Floss",
+    image: "https://media.istockphoto.com/id/1931745717/photo/container-with-dental-floss.jpg?s=612x612&w=0&k=20&c=_6JVoyut85u7QbnTqY0A74dI-4h4Eg_5h6F2O_NHABw=",
+    price: "Ksh 120",
+    desc: "Removes plaque between teeth.",
+    category: "Dental Care"
+  },
+  {
+    name: "Mouthwash (Antiseptic)",
+    image: "https://media.istockphoto.com/id/1566986561/photo/oral-hygiene-use-of-mouthwash-for-the-health-of-teeth-and-gums-fresh-breath-teeth-care.jpg?s=612x612&w=0&k=20&c=bYgybR1g8RpUNp2jvA4fs_XlM5CnLVK_u4sPafEiP2o=",
+    price: "Ksh 200",
+    desc: "Fights bacteria and freshens breath.",
+    category: "Dental Care"
+  },
+  {
+    name: "Teeth Whitening Strips",
+    image: "https://media.istockphoto.com/id/2178692499/photo/young-woman-with-red-lips-holding-a-3d-transparent-teeth-whitening-strip-to-get-rid-of-plaque.jpg?s=612x612&w=0&k=20&c=0nPfcXVJ-EfkOins-BIVc2ptnLpA9zCiLrbth7Cgarc=",
+    price: "Ksh 300",
+    desc: "Brightens and whitens stained teeth.",
+    category: "Dental Care"
+  },
+  {
+    name: "Desensitizing Toothpaste",
+    image: "https://media.istockphoto.com/id/958183650/photo/toothpaste-in-the-shape-of-tooth-coming-out-from-toothpaste-tube-brushing-teeth-dental-concept.jpg?s=612x612&w=0&k=20&c=AbOkDJaBhVyLJ57LJaL84K5DuAGJa3liQ-JTSpFkaSQ=",
+    price: "Ksh 250",
+    desc: "Reduces tooth sensitivity.",
+    category: "Dental Care"
+  },
+  {
+    name: "Kids' Toothpaste (Flavored)",
+    image: "https://media.istockphoto.com/id/1281520339/photo/cleaning-teeth.webp?a=1&b=1&s=612x612&w=0&k=20&c=zQndSbmfoH3gujJlj1JWg0aVwiCJJvyd2xYuLnnc294=",
+    price: "Ksh 180",
+    desc: "Gentle and safe for children's teeth.",
+    category: "Dental Care"
+  },
+  {
+    name: "Denture Adhesive Cream",
+    image: "https://media.istockphoto.com/id/1745947814/photo/tube-of-toothpaste-on-a-white-background.jpg?s=612x612&w=0&k=20&c=7axU2TX_pNKXBxTzjZIY-uqbC-APbf3mHvoSjtqXW-g=",
+    price: "Ksh 300",
+    desc: "Keeps dentures secure.",
+    category: "Dental Care"
   }
 ];
 
@@ -144,6 +201,14 @@ const PharmacyProducts = () => {
     // In a real app, redirect to checkout with this product.
   };
 
+  // Group products by category (default to "General" if no category)
+  const groupedProducts = products.reduce((groups, product) => {
+    const category = product.category || "General";
+    if (!groups[category]) groups[category] = [];
+    groups[category].push(product);
+    return groups;
+  }, {});
+
   return (
     <section className="pharmacy-products">
       <div className="pharmacy-products__container">
@@ -153,36 +218,41 @@ const PharmacyProducts = () => {
             {message}
           </div>
         )}
-        <div className="pharmacy-products__list">
-          {products.map((product) => (
-            <div className="pharmacy-product" key={product.name}>
-              <img src={product.image} alt={product.name} className="pharmacy-product__img" />
-              <div className="pharmacy-product__info">
-                <h3 className="pharmacy-product__name">{product.name}</h3>
-                <p className="pharmacy-product__desc">{product.desc}</p>
-                {product.extra && (
-                  <div className="pharmacy-product__extra">{product.extra}</div>
-                )}
-                <span className="pharmacy-product__price">{product.price}</span>
-                <div className="pharmacy-product__actions">
-                  <button
-                    className="pharmacy-product__buy-btn"
-                    onClick={() => handleBuyNow(product)}
-                  >
-                    Buy Now
-                  </button>
-                  <button
-                    className="pharmacy-product__cart-icon"
-                    title="Add to Cart"
-                    onClick={() => handleAddToCart(product)}
-                  >
-                    <FaShoppingCart />
-                  </button>
+        {Object.entries(groupedProducts).map(([category, items]) => (
+          <div key={category} className="pharmacy-products__category">
+            <h3 className="pharmacy-products__category-title">{category}</h3>
+            <div className="pharmacy-products__list">
+              {items.map((product) => (
+                <div className="pharmacy-product" key={product.name}>
+                  <img src={product.image} alt={product.name} className="pharmacy-product__img" />
+                  <div className="pharmacy-product__info">
+                    <h3 className="pharmacy-product__name">{product.name}</h3>
+                    <p className="pharmacy-product__desc">{product.desc}</p>
+                    {product.extra && (
+                      <div className="pharmacy-product__extra">{product.extra}</div>
+                    )}
+                    <span className="pharmacy-product__price">{product.price}</span>
+                    <div className="pharmacy-product__actions">
+                      <button
+                        className="pharmacy-product__buy-btn"
+                        onClick={() => handleBuyNow(product)}
+                      >
+                        Buy Now
+                      </button>
+                      <button
+                        className="pharmacy-product__cart-icon"
+                        title="Add to Cart"
+                        onClick={() => handleAddToCart(product)}
+                      >
+                        <FaShoppingCart />
+                      </button>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );

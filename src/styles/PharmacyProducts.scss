@@ -32,6 +32,22 @@
       transition: opacity 0.25s;
     }
   
+    &__category {
+      margin-bottom: 36px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &__category-title {
+      font-size: 1.32rem;
+      font-weight: 600;
+      margin-bottom: 18px;
+      color: #176db3;
+      letter-spacing: 0.5px;
+      text-align: left;
+      padding-left: 10px;
+    }
+  
     &__list {
       display: flex;
       flex-wrap: wrap;
@@ -82,6 +98,16 @@
       color: #444;
       margin-bottom: 9px;
       min-height: 32px;
+    }
+  
+    &__extra {
+      font-size: 0.94rem;
+      color: #b53b3b;
+      background: #fdeaea;
+      border-radius: 7px;
+      padding: 4px 7px;
+      margin-bottom: 9px;
+      display: inline-block;
     }
   
     &__price {
