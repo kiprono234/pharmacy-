@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HeaderPromo from "./components/HeaderPromo";
-import Home from "./Pages/Home";
+// import Home from "./Pages/Home";
 import PharmacyProducts from "./components/PharmacyProducts";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
               <>
                 <HeaderPromo />
                 <PharmacyProducts />
-                <Home />
+                {/* <Home /> */}
               </>
             }
           />
