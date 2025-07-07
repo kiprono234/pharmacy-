@@ -411,35 +411,35 @@ const products = [
 },
 {
   name: "Iron Tablets",
-  image: "https://media.istockphoto.com/id/1216295137/photo/              medical-concept-hydroxychloroquine-cloroquina-medicine-with-pills-on-white-background.webp",  
+  image: "https://images.unsplash.com/photo-1704650311329-fb978a50e5e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fElyb24lMjBUYWJsZXRzfGVufDB8fDB8fHww",  
   price: "Ksh 200", 
   desc: "Supports iron absorption and metabolism.",
   category: "Vitamins & Supplements"
 },
 {
   name: "Vitamin B Complex",
-  image: "https://media.istockphoto.com/id/1216295137/photo/medical-concept-hydroxychloroquine-cloroquina-medicine-with-pills-on-white-background.webp",
+  image: "https://media.istockphoto.com/id/2148586243/photo/vitamin-b-pills-isolated-on-white-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=Ck9fG7ZYQ5ToLPdWcFr4lmJhl1OtBeM-e_wARrr9gWY=",
   price: "Ksh 220",
   desc: "Supports energy metabolism and nervous system health.",
   category: "Vitamins & Supplements"
 },
 {
   name: "Magnesium Tablets",
-  image: "https://media.istockphoto.com/id/1216295137/photo/medical-concept-hydroxychloroquine-cloroquina-medicine-with-pills-on-white-background.webp",
+  image: "https://media.istockphoto.com/id/1297448634/photo/woman-taking-magnesium-pills-out-of-a-bottle.webp?a=1&b=1&s=612x612&w=0&k=20&c=YusinPGFZlYiYVsZEX7xY1Rd6Lr2W0YpWZ0ti5KUp0c=",
   price: "Ksh 180",
   desc: "Supports muscle and nerve function.",
   category: "Vitamins & Supplements"
 },
 {
   name: "Zinc Lozenges",
-  image: "https://media.istockphoto.com/id/1216295137/photo/medical-concept-hydroxychloroquine-cloroquina-medicine-with-pills-on-white-background.webp",
+  image: "https://www.goodlife.co.ke/wp-content/smush-webp/2021/09/1131354.jpg.webp",
   price: "Ksh 150",
   desc: "Supports immune function and throat health.",
   category: "Vitamins & Supplements"
 },
 {
   name: "Coenzyme Q10 (CoQ10)",
-  image: "https://media.istockphoto.com/id/1216295137/photo/medical-concept-hydroxychloroquine-cloroquina-medicine-with-pills-on-white-background.webp",
+  image: "https://www.goodlife.co.ke/wp-content/smush-webp/2023/11/1135709.jpeg.webp",
   price: "Ksh 400",
   desc: "Supports heart health and energy production.",
   category: "Vitamins & Supplements"
@@ -448,35 +448,183 @@ const products = [
   // Women’s Health & Reproductive Health
   {
     name: "Folic Acid Tablets",
-    image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=500&auto=format&fit=crop&q=60",
+    image: "https://media.istockphoto.com/id/1197693392/photo/pregnant-woman-taking-pill-at-home.webp?a=1&b=1&s=612x612&w=0&k=20&c=5IIjrj-UKQfTEWHFyMt_NHZuSYhamG2DVLuyNiksAcY=",
     price: "Ksh 220",
     desc: "Supports reproductive health and pregnancy.",
     category: "Women’s Health & Reproductive Health"
   },
+  
   {
-    name: "Emergency Contraceptive",
-    image: "https://images.unsplash.com/photo-1514412076816-a73a5c72c3a0?w=500&auto=format&fit=crop&q=60",
-    price: "Ksh 400",
-    desc: "For prevention of unplanned pregnancy.",
+    name: "Prenatal Vitamins",
+    image: "https://images.unsplash.com/photo-1734607402858-a10164ded7a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8UHJlbmF0YWwlMjBWaXRhbWluc3xlbnwwfHwwfHx8MA%3D%3D",
+    price: "Ksh 300",
+    desc: "Supports fetal development and maternal health.",
+    category: "Women’s Health & Reproductive Health"
+  },
+  {
+    name: "Menstrual Relief",
+    image: "https://plus.unsplash.com/premium_photo-1702599088583-d6d0649d1a66?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8TWVuc3RydWFsJTIwUmVsaWVmfGVufDB8fDB8fHww",
+    price: "Ksh 180",
+    desc: "Relieves menstrual cramps and discomfort.",
+    category: "Women’s Health & Reproductive Health"
+
+  },
+  {
+    name: "Hormonal Contraceptive Pills",
+    image: "https://images.unsplash.com/photo-1645566373351-b69d3371d410?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fEhvcm1vbmFsJTIwQ29udHJhY2VwdGl2ZSUyMFBpbGxzfGVufDB8fDB8fHww",
+    price: "Ksh 500",
+    desc: "Prevents pregnancy and regulates menstrual cycles.", 
+    category: "Women’s Health & Reproductive Health"
+  },
+  {
+    name: "Calcium and Vitamin D Supplements",
+    image: "https://images.unsplash.com/photo-1664956617097-a99150bc32bc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fENhbGNpdW0lMjBhbmQlMjBWaXRhbWluJTIwRCUyMFN1cHBsZW1lbnRzfGVufDB8fDB8fHww",
+    price: "Ksh 250",
+    desc: "Supports bone health and prevents osteoporosis.",
+    category: "Women’s Health & Reproductive Health"
+
+  },
+  {
+    name: "Menopause Relief Supplements",
+    image: "https://images.unsplash.com/photo-1631980839613-61a08159d506?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TWVub3BhdXNlJTIwUmVsaWVmJTIwU3VwcGxlbWVudHN8ZW58MHx8MHx8fDA%3D",
+    price: "Ksh 300",
+    desc: "Helps manage symptoms of menopause.",
+    category: "Women’s Health & Reproductive Health"
+  },
+  {
+    name: "Pregnancy Test Kits",  
+    image: "https://plus.unsplash.com/premium_photo-1673631267269-f1899119334d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8UHJlZ25hbmN5JTIwVGVzdCUyMEtpdHN8ZW58MHx8MHx8fDA%3D",
+    price: "Ksh 200",
+    desc: "Detects pregnancy hormones in urine.",
+    category: "Women’s Health & Reproductive Health"
+  },
+  {
+    name: "Folic Acid Supplements",
+    image: "https://media.istockphoto.com/id/1443539399/photo/pregnant-woman-taking-a-medicine-or-nutritional-supplement.webp?a=1&b=1&s=612x612&w=0&k=20&c=mSHcuG90b7-U2GYJYncLjmV2V98u5LAxkRyfJMIWIsA=",
+    price: "Ksh 150",
+    desc: "Supports fetal development and prevents neural tube defects.",
+    category: "Women’s Health & Reproductive Health"
+  },
+  {
+    name: "Breast Cancer Screening Kits",
+    image: "https://images.unsplash.com/photo-1598884143267-586d90a32141?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QnJlYXN0JTIwQ2FuY2VyJTIwU2NyZWVuaW5nJTIwS2l0c3xlbnwwfHwwfHx8MA%3D%3D",
+    price: "Ksh 800",
+    desc: "At-home screening for breast cancer awareness.",
+    category: "Women’s Health & Reproductive Health"
+  },
+  {
+    name: "Menstrual Cups",
+    image: "https://media.istockphoto.com/id/2193884007/photo/young-woman-holding-menstrual-cups-in-the-shape-of-a-heart-on-a-red-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=AOGwP6hhvRVtSp3yZPY2c_KezgthGl2r4MQD2kkCsZo=",
+    price: "Ksh 350",
+    desc: "Reusable menstrual hygiene product.",
+    category: "Women’s Health & Reproductive Health"
+  },
+  {
+    name: "Pregnancy Support Belts",
+    image: "https://tashbabystore.co.ke/wp-content/uploads/2023/09/194_image_high_2048x2048.webp",
+    price: "Ksh 600",
+    desc: "Provides support during pregnancy.",
+    category: "Women’s Health & Reproductive Health"
+
+  },
+  {
+    name: "Ovulation Test Kits",
+    image: "https://natalist.com/cdn/shop/products/ovulation_test_kit_1000x_crop_center.jpg?v=1655478785",
+    price: "Ksh 250",
+    desc: "Helps track ovulation cycles for family planning.",
     category: "Women’s Health & Reproductive Health"
   },
 
   // Skin Care & Dermatology
   {
     name: "Aloe Vera Gel",
-    image: "https://images.unsplash.com/photo-1515548211234-6c2a3c80bdf4?w=500&auto=format&fit=crop&q=60",
+    image: "https://media.istockphoto.com/id/1338025187/photo/aloe-vera-gel-dripping-on-group-of-aloe-vera-slices.webp?a=1&b=1&s=612x612&w=0&k=20&c=FrtXWYQ49fyOnu3dvbrEuRYt6gE_Cplh43H6cmgEuHg=",
     price: "Ksh 300",
     desc: "Soothes and moisturizes the skin.",
     category: "Skin Care & Dermatology"
   },
   {
     name: "Antifungal Cream",
-    image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?w=500&auto=format&fit=crop&q=60",
+    image: "https://media.istockphoto.com/id/2185737980/photo/antifungal-cream-and-nail-fungal.webp?a=1&b=1&s=612x612&w=0&k=20&c=DeT5ffhy5NBt8M_XTDALggXsCMNz7JkEyiHCPnWfSGM=",
     price: "Ksh 180",
     desc: "Treats fungal infections of the skin.",
     category: "Skin Care & Dermatology"
   },
+{
+  name: "Acne Treatment Cream",
+  image: "https://media.istockphoto.com/id/1201568138/photo/portrait-of-woman-with-acne-inflammation-on-her-face-and-she-trying-to-applying-acne-cream-on.webp?a=1&b=1&s=612x612&w=0&k=20&c=wR3970pObn1rN-tSezLZkwioI9M6MAwbR3LCUfr3Y24=",
+  price: "Ksh 250",
+  desc: "Reduces acne and prevents future breakouts.",
+  category: "Skin Care & Dermatology"
+},
+{
+  name: "Moisturizing Cream",
+  image: "https://images.unsplash.com/photo-1575410229391-19b4da01cc94?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TW9pc3R1cml6aW5nJTIwQ3JlYW18ZW58MHx8MHx8fDA%3D",
+  price: "Ksh 200",
+  desc: "Hydrates and nourishes the skin.",
+  category: "Skin Care & Dermatology"
+},
+{
+  name: "Sunscreen SPF 50",
+  image: "https://images.unsplash.com/photo-1698912269897-c9325da81afc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8U3Vuc2NyZWVuJTIwU1BGJTIwNTB8ZW58MHx8MHx8fDA%3D",
+  price: "Ksh 150",
+  desc: "Protects the skin from UV rays.",
+  category: "Skin Care & Dermatology"
+},
+{
+  name: "Eczema Cream",
+  image: "https://images.unsplash.com/photo-1614267862869-67875a45cd2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fEVjemVtYSUyMENyZWFtfGVufDB8fDB8fHww",
+  price: "Ksh 250",
+  desc: "Relieves eczema symptoms and soothes the skin.",
+  category: "Skin Care & Dermatology"
 
+},
+{
+  name: "Anti-Aging Cream",
+  image: "https://images.unsplash.com/photo-1708477199100-e4d5f56a8eb2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QW50aSUyMEFnaW5nJTIwQ3JlYW18ZW58MHx8MHx8fDA%3D",
+  price: "Ksh 350",
+  desc: "Reduces fine lines and wrinkles.",
+  category: "Skin Care & Dermatology"
+
+},
+{
+  name: "Hydrating Face Mask",
+  image: "https://plus.unsplash.com/premium_photo-1732576711163-ea2ca7de8811?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8SHlkcmF0aW5nJTIwRmFjZSUyME1hc2t8ZW58MHx8MHx8fDA%3D",
+  price: "Ksh 150",
+  desc: "Deeply hydrates and revitalizes the skin.",
+  category: "Skin Care & Dermatology"
+
+},
+{
+  name: "Psoriasis Treatment Cream",
+  image: "https://media.istockphoto.com/id/1442908647/photo/applying-moisturizer-to-skin-with-psoriasis.webp?a=1&b=1&s=612x612&w=0&k=20&c=UInxFYfc_HW96xdrRJLDkEPzbQJVDGUknv51O4F6uqA=",
+  price: "Ksh 250",
+  desc: "Relieves psoriasis symptoms and soothes the skin.",
+  category: "Skin Care & Dermatology"
+},
+{
+  name: "Wart Removal Cream",
+  image: "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/65/9502091/1.jpg?166898",
+  price: "Ksh 200",
+  desc: "Removes warts and prevents future infections.",
+  category: "Skin Care & Dermatology"
+},
+{
+  name: "Skin Brightening Cream",
+  image: "https://images.unsplash.com/photo-1674867688570-1ec1ff21f597?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fFNraW4lMjBCcmlnaHRlbmluZyUyMENyZWFtfGVufDB8fDB8fHww",
+  price: "Ksh 300",
+  desc: "Evens skin tone and reduces dark spots.",
+  category: "Skin Care & Dermatology"
+
+},
+{
+  name: "Anti-Itch Cream",
+  image: "https://images.unsplash.com/photo-1643379855997-5344bd8d3e78?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fEFudGklMjBJdGNoJTIwQ3JlYW18ZW58MHx8MHx8fDA%3D",
+  price: "Ksh 250",
+  desc: "Relieves itching and soothes the skin.",
+  category: "Skin Care & Dermatology"
+
+},
   // Dental Care Products
   {
     name: "Fluoride Toothpaste",
@@ -487,25 +635,149 @@ const products = [
   },
   {
     name: "Dental Floss",
-    image: "https://media.istockphoto.com/id/1931745717/photo/container-with-dental-floss.jpg",
+    image: "https://media.istockphoto.com/id/2192358916/photo/anonymous-close-up-image-of-a-person-flossing-their-teeth-emphasizing-the-importance-of.webp?a=1&b=1&s=612x612&w=0&k=20&c=d8iRb0X798coYDKbvjYnzeW8b5_pouKUATzje8VGHic=",
     price: "Ksh 120",
     desc: "Removes plaque between teeth.",
     category: "Dental Care Products"
   },
+  {
+    name: "Mouthwash",
+    image: "https://images.unsplash.com/photo-1622115914441-fe73c383673d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TW91dGh3YXNofGVufDB8fDB8fHww",
+    price: "Ksh 500",
+    desc: "Freshens breath and kills bacteria.",
+    category: "Dental Care Products"
+  },
+  {
+    name: "Toothbrush",
+    image: "https://media.istockphoto.com/id/2167362374/photo/close-up-of-toothbrushes-in-pink-cups-on-table-against-white-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=6G7IV1SqmQRhQbryXE16fRNciqvXaJrwqxvG3ltQyXo=",
+    price: "Ksh 100",
+    desc: "Keeps teeth clean and healthy.",
+    category: "Dental Care Products"
+  },
+  {
+    name: "Dental Whitening Strips",
+    image: "https://media.istockphoto.com/id/1645852546/photo/clear-aligner-dental-night-guard.webp?a=1&b=1&s=612x612&w=0&k=20&c=EW3w1F5gFhnt1zSWRcmam58LjdfJW7sblVMgr1xdoC4=",
+    price: "Ksh 200",
+    desc: "Whiten teeth and remove stains.",
+    category: "Dental Care Products"
+  },
+  {
+    name: "Tongue Scraper",
+    image: "https://media.istockphoto.com/id/503888524/photo/woman-cleaning-her-tongue.webp?a=1&b=1&s=612x612&w=0&k=20&c=n45lP-E5hhgnXKAsv7OjOYoU1O_NFaDL3jXxka9Tc8U=",
+    price: "Ksh 80",
+    desc: "Keeps tongue clean and healthy.",
+    category: "Dental Care Products"
+
+  },
+  {
+    name: "Dental Chewing Gum",
+    image: "https://images.unsplash.com/photo-1518201503748-a69be957380e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fERlbnRhbCUyMENoZXdpbmclMjBHdW18ZW58MHx8MHx8fDA%3D",
+    price: "Ksh 50",
+    desc: "Freshens breath and promotes oral health.",
+    category: "Dental Care Products"
+  },
+  {
+    name: "Toothpaste for Sensitive Teeth",
+    image: "https://media.istockphoto.com/id/185058623/photo/toothbrush-and-toothpaste-isolated-on-white-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=LZqXOPYDfXGjsox29ANe3cHVeYuqp_ZnH9je80etgPw=",
+    price: "Ksh 180",
+    desc: "Keeps teeth clean and healthy.",
+    category: "Dental Care Products"
+  },
+  {
+    name: "Dental Floss Picks",
+    image: "https://media.istockphoto.com/id/1785231448/photo/flat-lay-composition-with-dental-floss-picks-on-blue.webp?a=1&b=1&s=612x612&w=0&k=20&c=bMOMtShXH2-CnQo05S4ItF29KZtPPJ820YankgXYx3s=",
+    price: "Ksh 100",
+    desc: "Removes plaque and food particles.",
+    category: "Dental Care Products"
+  },
+  {
+    name: "Mouthwash for Bad Breath",
+    image: "https://media.istockphoto.com/id/2187673242/photo/woman-pouring-mouthwash-into-cap.webp?a=1&b=1&s=612x612&w=0&k=20&c=5poNHfRR0wISVdxmGqfPDRxTrhdZ_7-hkauXD90_uJ8=",
+    price: "Ksh 150",
+    desc: "Keeps teeth clean and healthy.",
+    category: "Dental Care Products"
+
+  },
+  {
+    name: "Dental Sealants",
+    image: "https://media.istockphoto.com/id/471617516/photo/seal-light-cure-the-child-in-the-dental-office.webp?a=1&b=1&s=612x612&w=0&k=20&c=mFgfY7r3wvLy004d_0qXT_AUkYFJ9DdVU2wI0S7Z5DE=",
+    price: "Ksh 250",
+    desc: "Protects teeth from decay.",
+    category: "Dental Care Products"
+  },
+  {
+    name: "Dental    Whitening Strips",
+    image: "https://media.istockphoto.com/id/2178692499/photo/young-woman-with-red-lips-holding-a-3d-transparent-teeth-whitening-strip-to-get-rid-of-plaque.webp?a=1&b=1&s=612x612&w=0&k=20&c=zmR0WiQN70Mz5gzkOyQ0o6l7iJCgzc6Yfq70ORMSlIQ=",
+    price: "Ksh 200",
+    desc: "Whiten teeth and remove stains.",
+    category: "Dental Care Products"
+
+  },
+  // Eye Care Products
+  {
+    name: "Eye Drops for Dry Eyes",
+    image: "https://media.istockphoto.com/id/1201568138/photo/eye-drops-for-dry-eyes-on-a-white-background.jpg",  
+    price: "Ksh 150",
+    desc: "Relieves dryness and inflammation.",
+    category: "Eye Care Products"
+  },
+
 
   // First Aid & Wound Care
   {
     name: "Hydrogen Peroxide 100ml",
-    image: "https://media.istockphoto.com/id/2214588493/photo/assorted-amber-medicine-bottles-on-table.webp",
+    image: "https://5.imimg.com/data5/SELLER/Default/2023/1/VF/MZ/RF/63232778/h2o21001.PNG",
     price: "Ksh 80",
     desc: "Used for cleaning wounds.",
     category: "First Aid & Wound Care"
   },
   {
     name: "Bandage Roll (Crepe Bandage)",
-    image: "https://media.istockphoto.com/id/547422364/photo/medical-bandages-with-scissors-and-sticking-plaster.webp",
+    image: "https://media.istockphoto.com/id/526213113/photo/tensor-bandage.webp?a=1&b=1&s=612x612&w=0&k=20&c=_NOeObKIcZBXrKVZCYEKi0yoEu4P0sgJyZ0-2UpW3eU=",
     price: "Ksh 90",
     desc: "For strain or sprain support.",
+    category: "First Aid & Wound Care"
+  },
+  {
+    name: "Gauze Pads (10 Pads)",
+    image: "https://media.istockphoto.com/id/1152810195/photo/gauzes-scissors-and-roll-gauze-on-white-background-top-view.webp?a=1&b=1&s=612x612&w=0&k=20&c=azZTWrIFXWoXMNDcVt0XN9BvqkqYd-JGc9bTPUq0bW8=",
+    price: "Ksh 50",
+    desc: "For minor cuts and scrapes.",
+    category: "First Aid & Wound Care"
+  },
+  {
+    name: "Antiseptic Wipes (20 Wipes)",
+    image: "https://images-cdn.ubuy.qa/65805016999d1442c92d4903-antiseptic-first-aid-wipes-20-box.jpg",
+    price: "Ksh 100",
+    desc: "For cleaning wounds and surfaces.",
+    category: "First Aid & Wound Care"
+  },
+  {
+    name: "Adhesive Bandages  (A PACKET)(Assorted Sizes)",
+    image: "https://media.istockphoto.com/id/2168547392/photo/black-child-with-band-aid-on-his-arm-after-vaccination.webp?a=1&b=1&s=612x612&w=0&k=20&c=D1ZKQgRZNVVEN1cVlD_Rk7Jjhrv2drGeu10N37b43BQ=",
+    price: "Ksh 120",
+    desc: "For covering small cuts and blisters.",
+    category: "First Aid & Wound Care"
+  },
+  {
+    name: "Medical Tape (1 Roll)",
+    image: "https://media.istockphoto.com/id/106557982/photo/medical-tape.webp?a=1&b=1&s=612x612&w=0&k=20&c=qOMFD99haqF1HI9YRADQL6OnlUdWMNqIKMoKABkIJZs=",
+    price: "Ksh 70",
+    desc: "For securing dressings and bandages.",
+    category: "First Aid & Wound Care"
+  },
+  {
+    name: "Burn Cream (50g)",
+    image: "https://media.istockphoto.com/id/972888932/photo/child-hand-with-second-degree-burn.webp?a=1&b=1&s=612x612&w=0&k=20&c=60eeZq0e16YOVPJPVXg9gx5bBCnBp_6VSUhW6ikUzFs=",
+    price: "Ksh 200",
+    desc: "Soothes and protects minor burns.",
+    category: "First Aid & Wound Care"
+  },
+  {
+    name: "Antibiotic Ointment (15g)",
+    image: "https://media.istockphoto.com/id/1299653664/photo/triple-antibiotic-ointment-squirted-from-the-tube.webp?a=1&b=1&s=612x612&w=0&k=20&c=3dItVIR1RXifJhl4_5FbywhxToNBklAWcNVKbdjmoII=",
+    price: "Ksh 150",
+    desc: "Prevents infection in minor cuts and scrapes.",
     category: "First Aid & Wound Care"
   },
 
