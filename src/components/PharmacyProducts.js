@@ -14,7 +14,9 @@ const categories = [
   "Skin Care & Dermatology",
   "Dental Care Products",
   "First Aid & Wound Care",
-  "Pediatric Care"
+  "Pediatric Care",
+  "MedicalEquipment & Devices "
+  
 ];
 
 const products = [
@@ -937,6 +939,19 @@ name: "Children's Fever Reducer",
     desc: "Relieves pain and discomfort in children.",
     category: "Pediatric Care"
   },
+  // Medical Equipment & Devices
+  {
+    name:"Digital Thermometer",
+    image:"",
+    price: "ksh 500",
+    desc: "Accurate temperature measurement for adults and children.",
+    category: "Medical Equipment & Devices"
+  },
+  {
+    name: "Blood Pressure Monitor",
+    image:"",
+    price: "ksh 600",
+  }
 ];
 
 const PharmacyProducts = () => {
@@ -963,7 +978,7 @@ const PharmacyProducts = () => {
   return (
     <section className="pharmacy-products">
       <div className="pharmacy-products__container">
-        <h2 className="pharmacy-products__title">Medicines Available</h2>
+        <h2 className="pharmacy-products__title">Medicine Available</h2>
         {message && (
           <div className="pharmacy-products__msg">
             {message}

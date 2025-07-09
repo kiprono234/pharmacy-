@@ -3,11 +3,11 @@ import React from "react";
 import "../styles/HeaderPromo.scss";
 
 const promoImages = [
-  "https://plus.unsplash.com/premium_photo-1670459707372-714da6100992?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG1lZGljaW5lJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D",
-  "https://images.unsplash.com/photo-1709813610121-e2a51545e212?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1lZGljaW5lJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D",
-  "https://plus.unsplash.com/premium_photo-1670793333165-49f432507e34?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG1lZGljaW5lJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D",
-  "https://plus.unsplash.com/premium_photo-1687900531763-f4c9c7b99dca?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVkaWNpbmUlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D",
-  "https://images.unsplash.com/photo-1628771065518-0d82f1938462?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVkaWNpbmUlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D"
+  "https://plus.unsplash.com/premium_photo-1668487826871-2f2cac23ad56?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TUVESUNJTkV8ZW58MHx8MHx8fDA%3D",
+  "https://media.istockphoto.com/id/1820641054/photo/vitamins-and-supplements-variety-of-vitamin-tablets-in-a-jar-on-a-texture-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=As4V6nBw0X7zZgpOH_oUVLHxk-Dd3kCFchdye7kXl6A=",
+  "https://media.istockphoto.com/id/1445826806/photo/different-organic-beauty-products.webp?a=1&b=1&s=612x612&w=0&k=20&c=XIh9wM6Gh1LqLoTP2G4ueCMVs4bcHVRramZyrJ5AC4Q=",
+  "https://media.istockphoto.com/id/515829216/photo/good-bill-of-health.webp?a=1&b=1&s=612x612&w=0&k=20&c=VuP_cKyEbFb0gUSUT-BRpXfXQl-8sTOKB-TfpffTI8A=",
+  "https://plus.unsplash.com/premium_photo-1680221452502-e3efca4a16d5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8TUVESUNBTCUyMERFVklDRVN8ZW58MHx8MHx8fDA%3D"
 ];
 
 const animatedWords = [
