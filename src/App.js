@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import HeaderPromo from "./components/HeaderPromo";
 // import Home from "./Pages/Home";
 import PharmacyProducts from "./components/PharmacyProducts";
-
+import Footer from "./components/Footer";
 function App() {
   return (
     <Router>
@@ -18,6 +18,7 @@ function App() {
               <>
                 <HeaderPromo />
                 <PharmacyProducts />
+                <Footer />
                 {/* <Home /> */}
               </>
             }

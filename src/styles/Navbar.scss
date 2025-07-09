@@ -245,8 +245,16 @@
   }
 }
 
-// Dropdown animation (optional, add if you want fade-in effect)
-// @keyframes dropdown-fadein {
-//   from { opacity: 0; transform: translateY(8px);}
-//   to   { opacity: 1; transform: translateY(0);}
-// }------------------------------
+.navbar__category-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 3px 0;
+  width: 100%;
+  text-align: left;
+  &:hover {
+    color: #176db3;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,101 @@
+.prescription-modal__backdrop {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 1001;
+    background: rgba(30,40,60,0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .prescription-modal__content {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 32px rgba(44, 62, 80, 0.10);
+    max-width: 400px;
+    width: 100%;
+    padding: 30px 26px 22px 26px;
+    position: relative;
+    animation: popin 0.17s;
+  }
+  
+  @keyframes popin {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  .prescription-modal__close {
+    position: absolute;
+    top: 9px;
+    right: 13px;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    color: #176db3;
+    cursor: pointer;
+    transition: color 0.14s;
+    &:hover { color: #b53b3b; }
+  }
+  
+  .prescription-modal__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    label {
+      font-weight: 500;
+      color: #176db3;
+      font-size: 1rem;
+      margin-bottom: 3px;
+      display: flex;
+      flex-direction: column;
+      input[type="text"], textarea, input[type="file"] {
+        margin-top: 6px;
+        font-size: 1rem;
+        border-radius: 6px;
+        border: 1px solid #c8e1f5;
+        padding: 8px;
+        background: #f8fafc;
+        &:focus {
+          border: 1.5px solid #52a6f8;
+          outline: none;
+        }
+      }
+      textarea {
+        resize: vertical;
+        min-height: 60px;
+        max-height: 200px;
+      }
+      input[type="file"] {
+        background: #f8fafc;
+        border: none;
+        padding: 0;
+        font-size: 0.97rem;
+      }
+    }
+  }
+  
+  .prescription-modal__submit-btn {
+    background: #52a6f8;
+    color: #fff;
+    font-weight: 600;
+    padding: 9px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.07rem;
+    cursor: pointer;
+    margin-top: 3px;
+    transition: background 0.16s;
+    &:hover { background: #176db3; }
+  }
+  
+  .prescription-modal__confirmation {
+    text-align: center;
+    font-size: 1.12rem;
+    color: #1b8c27;
+    margin: 14px 0;
+    span {
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 8px;
+    }
+  }

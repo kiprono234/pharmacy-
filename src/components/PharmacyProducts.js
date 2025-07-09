@@ -54,7 +54,49 @@ const products = [
     desc: "Used for pain, inflammation, and fever.",
     category: "Pain Relief & Anti-Inflammatories" 
   },
+{
+  name: "Tylenol 500mg",
+  image: "https://images.unsplash.com/photo-1632067694852-8386d261115a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VHlsZW5vbCUyMDUwMG1nfGVufDB8fDB8fHww",
+  price: "Ksh 150",
+  desc: "Used for pain, inflammation, and fever.",
+  category: "Pain Relief & Anti-Inflammatories"
+},
+{
+  name: "Advil 500mg",
+  image: "https://media.istockphoto.com/id/1340436771/photo/aspirin-medicine-bottle-with-white-round-pills-on-flat-surface.jpg?s=2048x2048&w=is&k=20&c=yvgFiilIoVhfq3loDtp8qCcv_TkzmAIlL9YyLlyoK5M=",
+  price: "Ksh 150",
+  desc: "Used for pain, inflammation, and fever.",
+  category: "Pain Relief & Anti-Inflammatories"
+},
+{
+  name: "Motrin 500mg",
+  image: "https://media.istockphoto.com/id/1189007912/photo/medicine-acetaminophen-tablets-close-up-2019.webp?a=1&b=1&s=612x612&w=0&k=20&c=kv2mFHnd3rysKqC3mxDkmt1oyagkgPPSO18zG4ue5QM=",
+  price: "Ksh 150",
+  desc: "Used for pain, inflammation, and fever.",
+  category: "Pain Relief & Anti-Inflammatories"
+},
+{
+  name: "Panadol 500mg",
+  image: "https://media.istockphoto.com/id/473702842/photo/antibiotic-pills.webp?a=1&b=1&s=612x612&w=0&k=20&c=j80lpHsLjhAASmAAHidSyXoAMuHAyAnrulCSRMGZDww=",
+  price: "Ksh 150",
+  desc: "Used for pain, inflammation, and fever.",
+  category: "Pain Relief & Anti-Inflammatories"
+},
 
+{
+  name: "Aspirin 500mg",
+  image: "https://media.istockphoto.com/id/1360198036/photo/bottle-of-aspirin-tablets-on-white-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=iJQW5RwCCW6Y2wXhubtuZ7KEI7pNG8hWeXFuyHI2Ous=",
+  price: "Ksh 150",
+  desc: "Used for pain, inflammation, and fever.",
+  category: "Pain Relief & Anti-Inflammatories"
+},
+{
+  name: "Naproxen Sodium 500mg",
+  image: "https://media.istockphoto.com/id/1222004191/photo/generic-naproxen-anti-inflammatory-pills.webp?a=1&b=1&s=612x612&w=0&k=20&c=bKqhHEz74yeIcmC_nT0zOn0MN3lcVL4TW1oYKuj2ANY=",
+  price: "Ksh 150",
+  desc: "Used for pain, inflammation, and fever.",
+  category: "Pain Relief & Anti-Inflammatories"
+},
 
   // Antibiotics & Antimicrobials
   {
@@ -784,18 +826,117 @@ const products = [
   // Pediatric Care
   {
     name: "Children's Multivitamin Syrup",
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=500&auto=format&fit=crop&q=60",
+    image: "https://media.istockphoto.com/id/1521565615/photo/mother-feeding-a-liquid-medicine-to-sick-infant-baby-with-dropper.webp?a=1&b=1&s=612x612&w=0&k=20&c=X-5Rv3RJzTRgDc4vihwRk8cCa_evF7uK49ksaKrOZ_I=",
     price: "Ksh 210",
     desc: "Supports healthy growth in children.",
     category: "Pediatric Care"
   },
   {
     name: "Baby Lotion",
-    image: "https://plus.unsplash.com/premium_photo-1687900531763-f4c9c7b99dca?w=200",
+    image: "https://images.unsplash.com/photo-1750085036915-6e21c6981586?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QmFieSUyMExvdGlvbnxlbnwwfHwwfHx8MA%3D%3D",
     price: "Ksh 190",
     desc: "Gentle moisturizer for baby's skin.",
     category: "Pediatric Care"
-  }
+  },
+  {
+name: "Children's Fever Reducer",
+    image: "https://media.istockphoto.com/id/182732375/photo/child-in-bed-getting-his-medicine.webp?a=1&b=1&s=612x612&w=0&k=20&c=cP0-LQNL6QEgEyVtpqkwovY4A_cCL9Wa_Wf8ay1Bkvg=",
+    price: "Ksh 180",
+    desc: "Relieves fever and discomfort in children.",
+    category: "Pediatric Care"
+  },
+  {
+    name: "Baby Diaper Rash Cream",
+    image: "https://media.istockphoto.com/id/1870305239/photo/the-mother-is-treating-her-childs-pimple-allergy-with-a-cream-the-woman-is-gently-applying.webp?a=1&b=1&s=612x612&w=0&k=20&c=c0CXHOHGL8Di3fDsu5qOKa1mB2tDBSsPUszBc4sNATs=",
+    price: "Ksh 150",
+    desc: "Soothes and protects against diaper rash.",
+    category: "Pediatric Care"
+  },
+  {
+    name: "Children's Cough Syrup",
+    image: "https://media.istockphoto.com/id/1372189655/photo/mother-taking-care-of-sick-child.webp?a=1&b=1&s=612x612&w=0&k=20&c=6Qndj2NqM5pshgBAp3W3_rjG7EBxKW5mW4-WZ3WS-xQ=",
+    price: "Ksh 200",
+    desc: "Relieves cough and congestion in children.",
+    category: "Pediatric Care"
+  },
+  {
+    name: "Baby Thermometer",
+    image: "https://images.unsplash.com/photo-1695048441317-9b45bb726103?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QmFieSUyMFRoZXJtb21ldGVyfGVufDB8fDB8fHww",
+    price: "Ksh 250",
+    desc: "Accurate temperature measurement for infants.",
+    category: "Pediatric Care"
+  },
+  {
+    name: "Children's Probiotic Drops",
+    image: "https://media.istockphoto.com/id/1293059299/photo/mother-feeding-baby-boy-with-liquid-medicine.webp?a=1&b=1&s=612x612&w=0&k=20&c=K104GoRwNhhavxd1vM9oWg56NM_Z4LGlZeXfFq4IqYQ=",
+    price: "Ksh 220",
+    desc: "Supports digestive health in children.",
+    category: "Pediatric Care"
+  },
+  {
+    name: "Baby Sunscreen SPF 50",
+    image: "https://media.istockphoto.com/id/1357487017/photo/mother-applying-sunscreen-cream-to-baby.webp?a=1&b=1&s=612x612&w=0&k=20&c=fKyZ2MFMa95ZMwZu6WhcRHSAc6uNWEEEOr8vfDhgV-8=",
+    price: "Ksh 180",
+    desc: "Protects baby's sensitive skin from UV rays.",
+    category: "Pediatric Care"
+  },
+  {
+    name: "Children's Allergy Relief Tablets",
+    image: "https://media.istockphoto.com/id/1400137272/photo/the-child-shows-the-capsule-takes-medications-or-vitamin-supplements-to-food.webp?a=1&b=1&s=612x612&w=0&k=20&c=-u-cWrbZoJZU-AMRAm3l-Woyi4dCC5gZa1DwFXYoTZw=",
+    price: "Ksh 200",
+    desc: "Relieves allergy symptoms in children.",
+    category:
+    "Pediatric Care"
+  },
+  {
+    name: "Baby Nail Clippers",
+    image: "https://media.istockphoto.com/id/153749570/photo/close-up-of-mother-cutting-an-infants-fingernails.webp?a=1&b=1&s=612x612&w=0&k=20&c=-pfUgrseuYy9fLe5WDjM2kmBLgfG2deVY2wZT1IwvqU=",
+    price: "Ksh 100",
+    desc: "Safe and easy nail trimming for infants.",
+    category: "Pediatric Care"
+  },
+  {
+    name: "Children's Fever Reducer",
+    image: "https://plus.unsplash.com/premium_photo-1716979528022-4b47a9755a37?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q2hpbGRyZW4ncyUyMEZldmVyJTIwUmVkdWNlcnxlbnwwfHwwfHx8MA%3D%3D",
+    price: "Ksh 180",
+    desc: "Relieves fever and discomfort in children.",
+    category: "Pediatric Care"
+  },
+  {
+    name: "Baby Teething Gel",
+    image: "https://images.ctfassets.net/b7vjv6cc1lvj/4vMSff2jdP7vStiS3A0cHD/acf0f1062da5585a0997c946d7e770e2/CALGEL__Teething_Gel_updated.png",
+    price: "Ksh 150",
+    desc: "Soothes teething pain in infants.",
+    category: "Pediatric Care"
+  },
+  {
+    name: "Children's Vitamin D Drops",
+    image: "https://media.istockphoto.com/id/2184111574/photo/cropped-hand-of-mother-feeding-medicine-to-daughter.webp?a=1&b=1&s=612x612&w=0&k=20&c=KFJ-4H6E7AO4TFbb3WmvNJpjJb01AIgnyVz8WSR3cjg=",
+    price: "Ksh 200",
+    desc: "Supports bone health in growing children.",
+    category: "Pediatric Care"
+  },
+  {
+    name: "Baby Nasal Aspirator",
+    image: "https://media.istockphoto.com/id/1208589137/photo/mother-using-baby-nasal-aspirator-mucus-nose-suction.webp?a=1&b=1&s=612x612&w=0&k=20&c=PCmL2T1PfqJq6FuYxGUwUJZFZgeIHEsKj1SXGJ1xqF0=",
+    price: "Ksh 120",
+    desc: "Clears nasal congestion in infants.",
+    category: "Pediatric Care"
+  },
+  {
+    name: "Children's Digestive Enzymes",
+    image: "https://m.media-amazon.com/images/I/317mx7AC4uL._AC_UL320_.jpg",
+    price: "Ksh 220",
+    desc: "Supports healthy digestion in children.",
+    category: "Pediatric Care"
+  },
+  {
+    name: "Children's Pain Relief Tablets",
+    image: "https://media.istockphoto.com/id/1294600482/photo/mother-giving-vitamin-c-pill-to-her-child-dietary-supplements-for-kids.webp?a=1&b=1&s=612x612&w=0&k=20&c=GBhxe8bmzJcuYWkr51jm8jM2bV4qv4H5YnQK2cTTGqg=",
+    price: "Ksh 180",
+    desc: "Relieves pain and discomfort in children.",
+    category: "Pediatric Care"
+  },
 ];
 
 const PharmacyProducts = () => {
