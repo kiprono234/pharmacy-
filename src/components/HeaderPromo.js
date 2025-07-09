@@ -22,15 +22,14 @@ const animatedWords = [
 const marqueeWords = [...animatedWords, ...animatedWords]; // repeat for smooth marquee
 
 // Updated doctor image URLs
-const femaleDoctorImg = "https://plus.unsplash.com/premium_photo-1661580574627-9211124e5c3f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZG9jdG9yfGVufDB8fDB8fHww";
 const maleDoctorImg = "https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZG9jdG9yfGVufDB8fDB8fHww";
-
+const femaleDoctorImg = "https://plus.unsplash.com/premium_photo-1661580574627-9211124e5c3f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZG9jdG9yfGVufDB8fDB8fHww";
 const HeaderPromo = () => (
   <div className="header-promo">
     <img
       src={femaleDoctorImg}
       alt="Female Doctor"
-      className="doctor-img doctor-img--left"
+      className="doctor-img doctor-img--right"
     />
     <div className="header-promo-center">
       <div className="image-marquee">
@@ -68,7 +67,7 @@ const HeaderPromo = () => (
     <img
       src={maleDoctorImg}
       alt="Male Doctor"
-      className="doctor-img doctor-img--right"
+      className="doctor-img doctor-img--left"
     />
   </div>
 );

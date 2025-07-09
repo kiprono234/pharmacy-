@@ -314,7 +314,9 @@ const products = [
     category: "Digestive Health & Antacids"
     
   },
-
+{
+  
+},
 
   // Chronic Disease Medications
   {
